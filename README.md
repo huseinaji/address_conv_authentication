@@ -27,7 +27,7 @@
 ### Get 1 nama berdasarkan id
 <img src="/assets/add_conv_auth_nama_id.png" alt="add_conv_auth_nama_id" style="height: 700px; width:400px;"/>
 
-### Get all nama by kota_id
+### Get semua nama berdasarkan kota_id
 <img src="/assets/add_conv_auth_nama_kota_id.png" alt="add_conv_auth_nama_kota_id" style="height: 700px; width:400px;"/>
 
 ## Database
