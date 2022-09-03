@@ -1,0 +1,1198 @@
+{
+	"info": {
+		"_postman_id": "a883dae4-7d21-4d8f-8c21-ec07e964d5a3",
+		"name": "address-conv-auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22510850"
+	},
+	"item": [
+		{
+			"name": "login admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"huseinaji@gmail.com\",\r\n    \"role\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "contoh berhasil",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"huseinaji@gmail.com\",\r\n    \"role\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "307"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"133-lmpXk0QvdWhXqoXVXGfJa5EsdOA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 13:46:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Berhasil membuat user baru huseinaji@gmail.com\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjYzODAsImV4cCI6MTY2MjEzMzU4MH0.q2K23tf6qlyUFQHxGRjil5gFXl1V_ze-Cml604o7PMM\",\n        \"expTime\": \"2 Hours\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"akmal@gmail.com\",\r\n    \"role\": \"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"akmal@gmail.com\",\r\n    \"role\": \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "296"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"128-zajQ1OrUEoPNWZAzn6mpVF96vSs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 13:49:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Berhasil membuat user baru akmal@gmail.com\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFrbWFsQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYyMTI2NTkzLCJleHAiOjE2NjIxMzM3OTN9.wWv-iDdpG37ELhrFXuKl9HkwdpFAEdoPYsIncKzURL0\",\n        \"expTime\": \"2 Hours\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "login admin (UPDATE token)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"huseinaji@gmail.com\",\r\n    \"role\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login admin (UPDATE token)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"huseinaji@gmail.com\",\r\n    \"role\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "313"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"139-wAyDn4r+ua/0MYt/mXNWa4RGU2c\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 13:52:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Berhasil update token pada email huseinaji@gmail.com\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjY3MjksImV4cCI6MTY2MjEzMzkyOX0.4q-JYzQUMd2VKwqTGy4swkxgIhDJg1798bS0JdhnDQ0\",\n        \"expTime\": \"2 Hours\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "1 nama dari id; token benar; body ditemukan; user: admin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjY3MjksImV4cCI6MTY2MjEzMzkyOX0.4q-JYzQUMd2VKwqTGy4swkxgIhDJg1798bS0JdhnDQ0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/namaid/1101010",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"namaid",
+						"1101010"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "1 nama dari id; token benar; body ditemukan; user: admin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjY3MjksImV4cCI6MTY2MjEzMzkyOX0.4q-JYzQUMd2VKwqTGy4swkxgIhDJg1798bS0JdhnDQ0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/namaid/1101010",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"namaid",
+								"1101010"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-DMO6cEWR2P9dW1kV6yW5f9Z2prM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 14:13:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": \"TEUPAH SELATAN\"\n}"
+				}
+			]
+		},
+		{
+			"name": "1 nama dari id token benar body tidak ditemukan user: admin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjY3MjksImV4cCI6MTY2MjEzMzkyOX0.4q-JYzQUMd2VKwqTGy4swkxgIhDJg1798bS0JdhnDQ0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/namaid/110101011",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"namaid",
+						"110101011"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "1 nama dari id token benar body tidak ditemukan user: admin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjY3MjksImV4cCI6MTY2MjEzMzkyOX0.4q-JYzQUMd2VKwqTGy4swkxgIhDJg1798bS0JdhnDQ0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/namaid/110101011",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"namaid",
+								"110101011"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"49-fM4p5grSVBwV+sjN6j+8CcfKnOE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 14:27:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"gagal\",\n    \"message\": \"input body tidak ditemukan pada data dummy\"\n}"
+				}
+			]
+		},
+		{
+			"name": "1 nama dari id token null body ditemukan user: admin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/namaid/1101010",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"namaid",
+						"1101010"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "1 nama dari id token null body ditemukan user: admin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/namaid/1101010",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"namaid",
+								"1101010"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-df9uHUDhNEFwLAmxx25s3Gs/qOc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 14:31:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"fail\",\n    \"message\": \"otentikasi error\"\n}"
+				}
+			]
+		},
+		{
+			"name": "1 nama dari id token benar body ditemukan user: user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFrbWFsQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYyMTI5MjIyLCJleHAiOjE2NjIxMzY0MjJ9.xOubW5oJ_B5jqwemQjV9SZkIROHprz2VtF0TeKBwGaU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"akmal@gmail.com\",\r\n    \"role\": \"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/namaid/1101010",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"namaid",
+						"1101010"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "1 nama dari id token benar body ditemukan user: user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFrbWFsQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYyMTI5MjIyLCJleHAiOjE2NjIxMzY0MjJ9.xOubW5oJ_B5jqwemQjV9SZkIROHprz2VtF0TeKBwGaU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"akmal@gmail.com\",\r\n    \"role\": \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/namaid/1101010",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"namaid",
+								"1101010"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b-QRoPHLgKHBdqdHBKIvQlvr6Usww\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 14:34:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"permission failed\",\n    \"message\": \"role bukan admin\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"akmal@gmail.com\",\r\n    \"role\": \"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"akmal@gmail.com\",\r\n    \"role\": \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "302"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12e-eGtTY+o6v2Hn0jmiq4kP+nDh9Qc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 14:47:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Berhasil update token pada email akmal@gmail.com\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFrbWFsQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYyMTMwMDI5LCJleHAiOjE2NjIxMzcyMjl9.fLA0cIUGYzGu7iEU2YOZMng6NaI3WrOotbKL9xWh34s\",\n        \"expTime\": \"2 Hours\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "semua nama dari id token benar body ditemukan user: user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFrbWFsQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYyMTMwMDI5LCJleHAiOjE2NjIxMzcyMjl9.fLA0cIUGYzGu7iEU2YOZMng6NaI3WrOotbKL9xWh34s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/namakota/1102",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"namakota",
+						"1102"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "semua nama dari id token benar body ditemukan user: user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFrbWFsQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYyMTMwMDI5LCJleHAiOjE2NjIxMzcyMjl9.fLA0cIUGYzGu7iEU2YOZMng6NaI3WrOotbKL9xWh34s",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/namakota/1102",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"namakota",
+								"1102"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b-QRoPHLgKHBdqdHBKIvQlvr6Usww\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 14:47:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"permission failed\",\n    \"message\": \"role bukan admin\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"huseinaji@gmail.com\",\r\n    \"role\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"huseinaji@gmail.com\",\r\n    \"role\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "313"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"139-+hYhaqR8aRP7GOHPeW4IxKfsLqg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 14:40:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Berhasil update token pada email huseinaji@gmail.com\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjk2MjksImV4cCI6MTY2MjEzNjgyOX0.dCsAGUNOIqNN92XQdjwvtQ__EWCeGb_AppG_lKlr6Co\",\n        \"expTime\": \"2 Hours\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "semua nama dari id token benar body ditemukan user: admin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjk2MjksImV4cCI6MTY2MjEzNjgyOX0.dCsAGUNOIqNN92XQdjwvtQ__EWCeGb_AppG_lKlr6Co",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/namakota/1102",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"namakota",
+						"1102"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "semua nama dari id token benar body ditemukan user: admin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjk2MjksImV4cCI6MTY2MjEzNjgyOX0.dCsAGUNOIqNN92XQdjwvtQ__EWCeGb_AppG_lKlr6Co",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/namakota/1102",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"namakota",
+								"1102"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "183"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b7-/wrUes48rHtctFpUeBcuizNW21k\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 14:43:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        \"PULAU BANYAK\",\n        \"PULAU BANYAK BARAT\",\n        \"SINGKIL\",\n        \"SINGKIL UTARA\",\n        \"KUALA BARU\",\n        \"SIMPANG KANAN\",\n        \"GUNUNG MERIAH\",\n        \"DANAU PARIS\",\n        \"SURO\",\n        \"SINGKOHOR\",\n        \"KOTA BAHARU\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "semua nama dari id token benar body tidak ditemukan user: admin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjk2MjksImV4cCI6MTY2MjEzNjgyOX0.dCsAGUNOIqNN92XQdjwvtQ__EWCeGb_AppG_lKlr6Co",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/namakota/11022",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"namakota",
+						"11022"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "semua nama dari id token benar body tidak ditemukan user: admin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imh1c2VpbmFqaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjIxMjk2MjksImV4cCI6MTY2MjEzNjgyOX0.dCsAGUNOIqNN92XQdjwvtQ__EWCeGb_AppG_lKlr6Co",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/namakota/11022",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"namakota",
+								"11022"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"49-fM4p5grSVBwV+sjN6j+8CcfKnOE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 14:44:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"gagal\",\n    \"message\": \"input body tidak ditemukan pada data dummy\"\n}"
+				}
+			]
+		},
+		{
+			"name": "dapatkan semua nama dari id token salah body tidak ditemukan user: admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/namakota/1102",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"namakota",
+						"1102"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "dapatkan semua nama dari id token salah body tidak ditemukan user: admin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/namakota/1102",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"namakota",
+								"1102"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-df9uHUDhNEFwLAmxx25s3Gs/qOc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Sep 2022 14:45:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"fail\",\n    \"message\": \"otentikasi error\"\n}"
+				}
+			]
+		}
+	]
+}

@@ -7,9 +7,9 @@ module.exports = {
     });
   },
   readToken: (req, res, next) => {
-    console.log(req.token);
+    // console.log(req.token);
     jwt.verify(req.token, 'aksesAPI', (err, decode) => {
-      console.log(decode);
+      // console.log(decode);
       if (err){
         return res.status(400).send({
           status: 'fail',
